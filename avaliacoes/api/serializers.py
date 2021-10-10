@@ -1,0 +1,2 @@
+class Avaliacao:
+    pass
