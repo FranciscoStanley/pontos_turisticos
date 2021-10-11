@@ -12,5 +12,7 @@ class PontoTuristicoViewSet(ModelViewSet):
         return PontoTuristico.objects.filter(aprovado=True)
 
     def list(self, request, *args, **kwargs):
-        return Response({'Testando': 123})
+        return Response({'Memorial JK': 25})
 
+    def create(self, request, *args, **kwargs):
+        return Response({'Memorial JK': request.data['nome']})
