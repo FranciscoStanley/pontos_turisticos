@@ -19,3 +19,9 @@ class PontoTuristicoViewSet(ModelViewSet):
 
     def destroy(self, request, *args, **kwargs):
         pass
+
+    def retrieve(self, request, *args, **kwargs):
+        pass
+
+    def update(self, request, *args, **kwargs):
+        pass
