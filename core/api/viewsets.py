@@ -13,7 +13,7 @@ class PontoTuristicoViewSet(ModelViewSet):
     filter_backends = [SearchFilter, ]
     permission_classes = [IsAuthenticated]
     authentication_classes = [TokenAuthentication, ]
-    search_fields = ['nome', 'descricao', ]
+    search_fields = ['id', 'nome', 'descricao', ]
     lookup_field = 'nome'
 
     def get_queryset(self):
